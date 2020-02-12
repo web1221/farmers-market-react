@@ -278,11 +278,12 @@ function toggle() {
 function ProduceList(){
   return (
     <div>
-    <p onClick={toggle}>Click to see Produce list</p>
+    <h3 onClick={toggle}>Click to see Produce list</h3>
     <div className="produceList">
     {produceSchedule.map((schedule, index) =>
       <ProduceSchedule month={schedule.month}
       selection={schedule.selection}
+      evenOdd={index}
       key={index} />
     )}
     </div>

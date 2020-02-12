@@ -2,6 +2,15 @@ body {
   margin: 0;
 }
 
+h3 {
+  padding-bottom: 10px;
+}
+
+.market-style {
+  width: 70%;
+  padding: 25px;
+}
+
 .container{
   padding-top: 80px;
 }
@@ -13,3 +22,7 @@ body {
 .produceList {
   display: none;
 }
+
+/* .row {
+  text-align:center;
+} */

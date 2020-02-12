@@ -1,23 +1,19 @@
 import React from "react";
-
+import Banner from './banner.jpg';
 function NavBar(){
-  var navBar = {
-    minWidth: "100%",
-    backgroundColor: "#749604",
-    height: "85px"
-  }
 
-var navBarTitle = {
-  color: "white",
-  fontSize: "28px",
-  float: "right",
-  paddingRight: "50px",
-  paddingTop: "25px"
-}
+ var image = {
+   backgroundPosition: "center",
+   backgroundRepeat: "no-repeat",
+   backgroundSize: "cover",
+   width: "100%",
+   
+
+ }
 
   return (
-    <div style={navBar}>
-    <span style={navBarTitle}>Farmers Market</span>
+    <div>
+    <img src={Banner} alt="banner" style={image} />
     </div>
   );
 }

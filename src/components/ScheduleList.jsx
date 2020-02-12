@@ -49,14 +49,15 @@ function toggle() {
 function ScheduleList(){
   return (
     <div>
-    <p onClick={toggle}>Click to see schedule</p>
+    <h3 onClick={toggle}>Click to see schedule</h3>
     <div className="marketList">
     {marketSchedule.map((schedule, index) =>
       <MarketSchedule day={schedule.day}
       location={schedule.location}
       hours={schedule.hours}
       booth={schedule.booth}
-      key={index} />
+      evenOdd={index}
+      key={index}/>
     )}
     </div>
     </div>
