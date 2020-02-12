@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 
 function MarketSchedule(props){
     function oddEven() {
-      if (props.evenOdd % 2 === 0) {
-      return "#FEC263"
-    } else {
-      return "#ABE0A0"
-    }
+    return props.evenOdd % 2 ? "#FEC263" : "#ABE0A0"
   }
     let colColor = {
       backgroundColor: oddEven()

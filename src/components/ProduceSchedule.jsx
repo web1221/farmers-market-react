@@ -3,12 +3,8 @@ import PropTypes from 'prop-types';
 
 function ProduceSchedule(props){
   function oddEven() {
-    if (props.evenOdd % 2 === 0) {
-    return "#ABE0A0"
-  } else {
-    return "#FEC263"
+    return props.evenOdd % 2 ? "#ABE0A0" : "#FEC263"
   }
-}
   let colColor = {
     backgroundColor: oddEven()
   }
